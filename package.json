@@ -1,0 +1,34 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "vitepress docs",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@sugarat/theme": "^0.3.6",
+    "element-plus": "^2.7.2",
+    "vue": "3.4.26"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "pagefind": "^1.1.0",
+    "sass": "^1.76.0",
+    "typescript": "^5.4.5",
+    "vitepress": "1.2.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
+}
