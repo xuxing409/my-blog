@@ -46,6 +46,12 @@ export default defineConfig({
     nav: [
       // { text: '首页', link: '/' },
       {
+        text: '技术',
+        items: [
+          { text: '文章', link: '/technology/article/' }
+        ]
+      },
+      {
         text: '大前端',
         items: [
           { text: 'javascript', link: '/bigFE/js/' },
