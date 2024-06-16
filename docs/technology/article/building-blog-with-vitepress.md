@@ -65,7 +65,7 @@ npm init -y
   }
 ```
 ### 5. 启动服务
-在本地运行项目`vitepress`会在<http://localhost:5173/>启动一个热更新的开发服务器
+在本地运行项目`vitepress`会在`http://localhost:5173/`启动一个热更新的开发服务器
 ```shell
 pnpm dev
 ```
@@ -144,7 +144,15 @@ export default {
 ```
 ### 5. 创建索引index文件
 我们在bigFrontEnd目录下创建html目录,并在其下面创建inde.md、htm1.md、html2.md。编写index.md文件创建一个目录索引
-![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406170258436.png)
+```md
+# html 专题
+
+## 目录
+
+- [html1](./html1.md)
+- [html2](./html2.md)
+
+```
 这里我们分别为html、css、js配置了不同的侧边栏,当我们点击html时侧边栏会如下显示:
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406170040965.png)
 
