@@ -144,15 +144,7 @@ export default {
 ```
 ### 5. 创建索引index文件
 我们在bigFrontEnd目录下创建html目录,并在其下面创建inde.md、htm1.md、html2.md。编写index.md文件创建一个目录索引
-```md
-# html 专题
-
-## 目录
-
-- [html1](./html1.md)
-- [html2](./html2.md)
-
-```
+![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406170258436.png)
 这里我们分别为html、css、js配置了不同的侧边栏,当我们点击html时侧边栏会如下显示:
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406170040965.png)
 
@@ -171,7 +163,7 @@ export default {
 ### 6. home主页配置
 目前为止我们已经完成了大部分配置,但是主页目前还是空白,那么现在我们开始简单配置一下主页, 在docs/index.md中配置**layout: home**即可使用默认主题提供的首页布局,我们使用vitepress文档的样式。
 如果想要自定义,那么可以看看官方home具体接口说明<https://vitepress.dev/zh/reference/default-theme-home-page>
-```
+```md
 ---
 layout: home
 
@@ -248,7 +240,7 @@ export default {
 };
 
 ```
-### 2.创建.gitignore
+### 2. 创建.gitignore
 根目录创建.gitignore文件并写入内容
 ```
 node_modules
@@ -257,12 +249,12 @@ cache
 .temp
 .DS_Store
 ```
-### 3.上传代码到github
+### 3. 上传代码到github
 根据提示提交代码到github仓库，这里不再赘述
-### 4.开启Github Action
+### 4. 开启Github Action
 根据下图提示开启Github Action支持
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406170217787.png)
-### 5.配置`.github/workflows/deploy.yml`文件
+### 5. 配置`.github/workflows/deploy.yml`文件
 根目录新建同名文件夹与文件,文件内容参考如下
 ```yml
 name: Deploy Pages
