@@ -26,7 +26,8 @@ categories:
 在搭建博客之前,我们先做一下准备工作, 了解一下VitePress是个什么东东。VitePress是由Vue + vite支持的静态站点生成器，我们看到他是由基于Vue框架构建的，因为Vue使用起来不难，所以VitePress使用起来也很简单；并且它还是基于vite的，那么代表我们可以享受到Vite带来的开发体验！VitePress灵感来源于VuePress，现在VuePress2也支持了Vue3和Vite，但是官方由于开发精力有限决定把重心放到VitePress上，所以我们选择VitePress来进行博客搭建。
 
 ## 项目搭建
-### 1. 创建一个新目录，并进入
+### 1. 创建目录
+创建一个新目录，并进入
 ```shell
 mkdir my-blog && cd my-blog
 ```
@@ -89,7 +90,7 @@ export default {
 };
 
 ```
-### 3. 配置导航栏nav
+### 3. 配置导航栏
 它是显示在页面顶部的位置,可以在themeConfig下nav中配置。这里`link`我们仅配置到 **/** 他会自动匹配到目录的 **index.md** 文件,因为index.md是vitepress的默认入口文件,在vuepress中使用的是README.md作为默认的入口文件
 ```js
 export default {
@@ -214,7 +215,8 @@ hero:
 </style>
 ```
 这里接口配置的静态资源请在**docs目录**下创建**public目录**，并且引入对应的静态资源文件即可。
-### 7. 网站logo配置,配置完毕后如果没有显示可以尝试强制刷新缓存
+### 7. 网站logo配置
+配置完毕后如果没有显示可以尝试强制刷新缓存
 ```js
 // .vitepress/config.js
 export default {
