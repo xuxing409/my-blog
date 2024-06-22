@@ -8,7 +8,7 @@ isTimeLine: true
 date: 2024-06-17
 tags:
  - 技术
- - 教程
+ - 文章
 categories:
  - 技术
 ---
