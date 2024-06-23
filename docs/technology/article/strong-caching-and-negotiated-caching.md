@@ -22,6 +22,7 @@ categories:
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406221435134.png)
 以掘金为例，我们随便点开一篇文章，可以在控制台看到部分文件被缓存在disk cache（磁盘缓存）或memory cache（内存缓存）中。
 另外，我们可以看到从缓存在内存中获取资源比从磁盘中获取快的多的多了
+
 ## 缓存优点
 * 由于不需要从服务端获取资源，缓存保存在客户端上，客户端加载网页的速度会加快。
 * 不需要通过http请求已缓存的资源，减少了网络带宽的费用。
@@ -34,6 +35,7 @@ categories:
 
 这里我们需要记住通过HTTP请求资源时，http返回资源的同时在响应头标注该资源的缓存策略。
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406232240442.png)
+
 ### 第一次发起请求
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406232304658.png)
 浏览器第一次请求资源时，查找本地缓存发现没有该资源的缓存数据，浏览器随后向服务器请求数据，服务器收到请求返回数据和它的缓存策略，浏览器收到后将数据和缓存规则保存在缓存数据库中。
@@ -55,6 +57,7 @@ HTTP状态码200，标识来自磁盘，说明命中强缓存。
 ### 强缓存
 强缓存主要是看响应头的`Expires`和`Cache-Control`字段
 ![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406232346320.png)
+
 * Expires:  `HTTP1.0`的特性，表示资源过期的绝对时间点，即在这个时间之前则命中缓存，超过这个时间则缓存的资源过期。由于它是服务器时间与本地时间做对比，本地时间可以随意更改，会导致缓存混乱。
 * Cache-Control：`HTTP1.1`的特性，为了解决Expires的缺陷提出的，它主要有**max-age**、no-cache、no-store、private、public这几个字段
   * **max-age** 表示一个相对时间，单位是秒，比如 Cache-Control: max-age=500，代表资源有效期是500秒。
@@ -69,7 +72,7 @@ HTTP状态码200，标识来自磁盘，说明命中强缓存。
 
 
 
-![image-20240624002846302](C:%5CUsers%5Cpc%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240624002846302.png)
+![image-20240624002846302](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202406240248988.png)
 
 因此，通过response响应头中的`Cache-Control`的值，如果max-age=XXX秒，且资源未过期，则命中强缓存，浏览器识别到后不发送请求，直接从浏览器缓存中读取资源，否则值为no-cache，又或者资源过期，则说明没有命中，接下来进入协商缓存阶段。
 
