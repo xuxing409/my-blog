@@ -7,10 +7,10 @@ description: 介绍同源策略
 isTimeLine: true
 date: 2024-07-10
 tags:
- - 技术
- - 文章
+ - 前端
+ - 浏览器安全
 categories:
- - 技术：浏览器为什么要有同源策略？
+ - 技术
 
 ---
 
