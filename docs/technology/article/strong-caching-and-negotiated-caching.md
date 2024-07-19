@@ -7,8 +7,8 @@ description: 浏览器缓存机制——强缓存和协商缓存
 isTimeLine: true
 date: 2024-06-24
 tags:
- - 技术
- - 文章
+ - 浏览器缓存
+ - HTTP缓存
 categories:
  - 技术
 ---

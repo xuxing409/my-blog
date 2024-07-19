@@ -7,8 +7,8 @@ description: 介绍使用VitePress + Github Pages搭建博客
 isTimeLine: true
 date: 2024-06-17
 tags:
- - 技术
- - 文章
+ - VitePress
+ - 博客
 categories:
  - 技术
 ---
