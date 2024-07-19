@@ -43,7 +43,7 @@ categories:
 
 当我们输入123搜索
 
-![image-20240713155903899](C:%5CUsers%5Cpc%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240713155903899.png)
+![image-20240713155903899](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202407200033479.png)
 
 我们发现url上的链接最后query=123带上了刚刚查询的参数, 并且页面上还显示了搜索的字符串，现在我们来对其进行XSS攻击检验。
 
