@@ -89,7 +89,7 @@ categories:
 
 ![image-20240718132152386](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202407181321281.png)
 
-![image-20240718132210075](C:%5CUsers%5Cpc%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240718132210075.png)
+![image-20240718132210075](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202407200036672.png)
 
 想一想，虽然我们防范意识强，没有打开黑客的恶意链接，但是对于这种存储型XSS攻击，只要点进去的用户，都会在毫不知情的情况下受到黑客的攻击，真的是防不胜防。黑客攻击成功后，假冒用户做出高危操作或者将用户的信息发送给黑客的网站，造成财产损失。
 
