@@ -65,7 +65,7 @@ categories:
 
 #### 攻击流程
 
-![image-20240718130604016](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202407181306044.png)
+![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202407201517834.png)
 
 可以看到存储型的危害性极大，服务器不进行过滤，就会把恶意代码永久保存起来，
 
