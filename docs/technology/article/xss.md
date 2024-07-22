@@ -246,6 +246,9 @@ const content = xss('<script>alert("xss")</script>');
 
 ### CSP(Content Security Policy) 防止 XSS
 
+#### 什么是CSP
+简单来说，通过设置CSP来控制浏览器加载页面时允许执行的资源来源，这样来减少XSS攻击。
+
 * **禁止内联脚本和动态执行**：通过设置合适的 CSP 策略，禁止内联脚本 (`'unsafe-inline'`) 和动态执行 (`'unsafe-eval'`)，这可以防止大部分 XSS 攻击，因为攻击者无法直接在页面中插入执行恶意代码的脚本。
 
   **将 `script-src` 策略指令设置为不允许使用 `'unsafe-inline'**`
@@ -296,6 +299,37 @@ const content = xss('<script>alert("xss")</script>');
   ```
 
   * `report-uri` 指定了报告的接收端点 URL。浏览器会将违规事件报告发送到这个 URL(`http://reporturl.example.com/csp-violation-report-endpoint`)。通常是一个服务器端处理这些报告的端点。
+
+
+#### 实操
+* **nginx上配置CSP**
+
+找到你项目的nginx.conf文件,在其中加入header`add_header Content-Security-Policy "default-src 'self'; script-src 'self' cdn.example.com";`即可
+  ```plaintext
+  server { 
+      listen 80; 
+      server_name example.com; 
+      # 添加Content-Security-Policy头部 
+      add_header Content-Security-Policy "default-src 'self'; script-src 'self' cdn.example.com";
+      # 其他NGINX配置项 
+      location / { # 配置其他NGINX规则 } 
+  }
+  ```
+* **iis上配置CSP**
+
+在项目的根目录创建web.config文件，在其中加入如下片段。
+```xml
+<configuration> 
+    <system.webServer> 
+        <httpProtocol> 
+            <customHeaders> 
+                <add name="Content-Security-Policy" value="default-src 'self'; script-src 'self' cdn.example.com" /> 
+            </customHeaders> 
+        </httpProtocol> 
+    </system.webServer> 
+</configuration>
+```
+值得注意的的是，在添加新的CSP之前，你要了解你的网站当前加载的所有资源（例如脚本、样式表、字体、图片等），以及它们的来源。适当配置CSP策略，记得要多多刷新调试，确保CSP策略不影响当前系统的正常加载，最好从宽松的策略稳定上线后，再慢慢收紧。
 
 ## XSS漏洞检测
 
