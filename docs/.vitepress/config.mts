@@ -29,7 +29,8 @@ export default defineConfig({
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
-      level: [2, 3]
+      level: [2, 3],
+      label: '页面导航'
     },
     // 默认文案修改
     returnToTopLabel: '回到顶部',
@@ -48,7 +49,7 @@ export default defineConfig({
       {
         text: '技术',
         items: [
-          { text: '文章', link: '/technology/article/' }
+          { text: '技术文章', link: '/technology/article/' }
         ]
       },
       {
