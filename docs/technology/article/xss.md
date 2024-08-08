@@ -1,8 +1,8 @@
 ---
 sidebar:
- title: 手摸手带你进行XSS攻击与防御（二）
+ title: 手摸手带你进行XSS攻击与防御 前端安全（二）
  step: 1
-title: 手摸手带你进行XSS攻击与防御（二）
+title: 手摸手带你进行XSS攻击与防御 前端安全（二）
 description: 介绍同源策略
 isTimeLine: true
 date: 2024-07-20
@@ -13,7 +13,7 @@ categories:
  - 技术
 ---
 
-# 手摸手带你进行XSS攻击与防御 浏览器安全（二）
+# 手摸手带你进行XSS攻击与防御 前端安全（二）
 
 ## 前言
 
