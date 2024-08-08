@@ -1,8 +1,8 @@
 ---
 sidebar:
- title: 手摸手带你深入了解同源策略前端安全（一）
+ title: 手摸手带你深入了解同源策略 前端安全（一）
  step: 1
-title: 手摸手带你深入了解同源策略前端安全（一）
+title: 手摸手带你深入了解同源策略 前端安全（一）
 description: 介绍同源策略
 isTimeLine: true
 date: 2024-07-10
