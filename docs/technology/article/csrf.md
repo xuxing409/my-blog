@@ -1,8 +1,8 @@
 ---
 sidebar:
- title: 手摸手带你进行CSRF攻击与防御（三）
+ title: 🔥这一次带你彻底搞明白CSRF攻击与防御 前端安全（三）
  step: 1
-title: 手摸手带你进行CSRF攻击与防御（三）
+title: 🔥这一次带你彻底搞明白CSRF攻击与防御 前端安全（三）
 description: 介绍CSRF攻击与防御
 isTimeLine: true
 date: 2024-07-22
