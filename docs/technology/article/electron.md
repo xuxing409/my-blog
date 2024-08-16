@@ -23,7 +23,7 @@ electron 是一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的�
 
 ## Electron模型
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/49e5425b3dfb432585bd4b18d3748662~tplv-73owjymdk6-jj-mark:0:0:0:0:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiNTMyNjM1NzMyNDI1MjU2In0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1723365708&x-orig-sign=TnZrp7y0%2BHinIZgy1AVMmSMZf54%3D)
+![](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202408131301311.png)
 
 通过模型我们可以看到，Electron技术通过Chromium、Node.js结合了渲染进程和主进程，渲染进程专门负责页面的渲染，渲染进程还可以通过IPC和主进程进行通讯，主进程工作在Node.js环境中，因此可以调用系统底层的API能力
 
