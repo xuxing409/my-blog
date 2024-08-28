@@ -46,7 +46,7 @@ categories:
 
 ![image-20240828222621246](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202408282305180.png)
 
-这就让我翻了难，因为官方提供的demo没有这样的形状，最相近也就是最后一个图案。
+这就让我犯了难，因为官方提供的demo没有这样的形状，最相近也就是最后一个图案。
 
 ![image-20240829010253125](https://cdn.jsdelivr.net/gh/xuxing409/MyPictures@main/202408290102606.png)
 
