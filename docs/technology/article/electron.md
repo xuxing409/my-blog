@@ -10,7 +10,7 @@ tags:
  - Electron
  - 跨平台
 categories:
- - 技术前言
+ - 技术
 ---
 
 ## 介绍
